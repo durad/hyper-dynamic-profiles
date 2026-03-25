@@ -1,0 +1,26 @@
+{
+  "name": "hyper-dynamic-profiles",
+  "version": "1.0.0",
+  "description": "Hyper plugin that dynamically changes colors of tabs and terminal area.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.tsx --outfile=dist/index.js --format=cjs --platform=node --bundle --sourcemap --jsx-factory=React.createElement --jsx-fragment=React.Fragment",
+    "build:watch": "esbuild src/index.tsx --outfile=dist/index.js --format=cjs --platform=node --bundle --watch --sourcemap --jsx-factory=React.createElement --jsx-fragment=React.Fragment"
+  },
+  "keywords": [
+    "hyper",
+    "hyper-plugin",
+    "theme",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.25.12",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "mousetrap": "^1.6.5",
+    "strip-ansi": "^7.2.0"
+  }
+}
